@@ -538,7 +538,7 @@ yarn start
 ## 4. Mobile — Aplicativo React Native
 
 <div align="center">
-  <img src="assets/mascot.png" alt="Mascote TecTeca" width="80" />
+  <img src="assets/logoText.png" alt="Mascote TecTeca" width="80" />
 </div>
 
 > Repositório: https://github.com/tecteca-app/mobile  
@@ -803,7 +803,7 @@ git push origin master   # dispara o CI/CD
 ---
 
 <div align="center">
-  <img src="assets/logo.png" alt="TecTeca" width="160" />
+  <img src="assets/LogoText2.png" alt="TecTeca" width="160" />
   <br /><br />
   <sub>Documentação gerada em 24/03/2026 · Mantida pelos times de API, Dash e Mobile da Tecteca.</sub>
 </div>
