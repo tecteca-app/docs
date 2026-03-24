@@ -40,6 +40,9 @@ Antes de começar, você vai precisar das seguintes ferramentas:
    ```bash
    cp .env.example .env
    ```
+   ```powershell
+   Copy-Item .env.example .env
+   ```
 3. Preencha as variáveis de ambiente no `.env`. As principais são:
    - `DATABASE_URL`: URL de conexão com o Postgres.
    - `SECRET_TOKEN`: Chave secreta para JWT.
@@ -85,4 +88,4 @@ Guia passo a passo para ações como trocar senha, recuperar conta e gerenciar p
 
 ## 📜 Licença
 
-Este projeto está sob a licença [MIT](./LICENSE).
+Este módulo segue a licença definida no repositório de origem: [tecteca-app/api-node](https://github.com/tecteca-app/api-node).

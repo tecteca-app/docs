@@ -243,6 +243,12 @@ cp .env.example .env
 # DATABASE_URL, SECRET_TOKEN, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, PORT (padrão: 3001)
 ```
 
+```powershell
+Copy-Item .env.example .env
+# Preencha as variáveis principais:
+# DATABASE_URL, SECRET_TOKEN, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, PORT (padrão: 3001)
+```
+
 #### Múltiplos ambientes
 
 Crie arquivos separados baseados no `.env.example`:
@@ -250,6 +256,11 @@ Crie arquivos separados baseados no `.env.example`:
 ```bash
 cp .env.example .env.dev    # desenvolvimento / homologação
 cp .env.example .env.prod   # espelho de produção
+```
+
+```powershell
+Copy-Item .env.example .env.dev
+Copy-Item .env.example .env.prod
 ```
 
 #### Iniciar a aplicação
@@ -483,6 +494,17 @@ src/
 ```bash
 # Crie o arquivo de variáveis de ambiente
 echo "URL_REST=https://api.tecteca.com.br" > .env.local
+
+# Instale as dependências
+yarn install
+
+# Suba em modo desenvolvimento
+yarn dev
+```
+
+```powershell
+# Crie o arquivo de variáveis de ambiente
+Set-Content -Path .env.local -Value 'URL_REST=https://api.tecteca.com.br'
 
 # Instale as dependências
 yarn install
