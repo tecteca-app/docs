@@ -20,11 +20,11 @@
 
 Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
 
-| Repositório | GitHub | Pasta local |
+| Repositório | Descrição | GitHub |
 | --- | --- | --- |
-| **api** | https://github.com/tecteca-app/api-node | `api/` |
-| **dash** | https://github.com/EugTec/front-next | `dash/` |
-| **mobile** | https://github.com/tecteca-app/mobile | `mobile/` |
+| **api** | Backend Node.js — regras de negócio, banco, integrações | [tecteca-app/api-node](https://github.com/tecteca-app/api-node) |
+| **dash** | Dashboard Web Next.js — painel admin e área do cliente | [EugTec/front-next](https://github.com/EugTec/front-next) |
+| **mobile** | Aplicativo React Native — produto principal das famílias | [tecteca-app/mobile](https://github.com/tecteca-app/mobile) |
 
 ### URLs de produção
 
@@ -60,6 +60,8 @@ Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
    - [Como Rodar](#44-como-rodar)
    - [Build e Deploy](#45-build-e-deploy)
    - [Operações Comuns](#46-operações-comuns)
+5. [Equipe e Contato](#5-equipe-e-contato)
+6. [Fluxo de Trabalho Git](#6-fluxo-de-trabalho-git)
 
 ---
 
@@ -753,7 +755,29 @@ kill -9 <PID>
 
 ---
 
-## 5. Fluxo de Trabalho Git
+## 5. Equipe e Contato
+
+> Para dúvidas técnicas, fale diretamente com o responsável pelo módulo.
+
+| Módulo | Responsável | GitHub | Área |
+| :--- | :--- | :--- | :--- |
+| **API** | *(preencher)* | *(preencher)* | Backend / Infra |
+| **Dash** | *(preencher)* | *(preencher)* | Frontend Web |
+| **Mobile** | *(preencher)* | *(preencher)* | Mobile (Android / iOS) |
+
+### Canais de comunicação
+
+| Canal | Uso |
+| :--- | :--- |
+| **GitHub Issues** | Bugs e melhorias — abrir issue no repositório correspondente |
+| **GitHub Pull Requests** | Revisão de código — mencionar o responsável do módulo |
+| **Slack / WhatsApp** | *(preencher canal interno)* — dúvidas rápidas do dia a dia |
+
+> **Dica:** ao abrir uma issue, informe o módulo afetado, ambiente (dev/prod) e passos para reproduzir o problema.
+
+---
+
+## 6. Fluxo de Trabalho Git
 
 > Convenção adotada nos três repositórios.
 
@@ -806,4 +830,6 @@ git push origin master   # dispara o CI/CD
   <img src="assets/LogoText2.png" alt="TecTeca" width="460" />
   <br /><br />
   <sub>Documentação gerada em 24/03/2026 · Mantida pelos times de API, Dash e Mobile da Tecteca.</sub>
+  <br />
+  <sub>Dúvidas? Consulte a <a href="#5-equipe-e-contato">seção de Equipe e Contato</a> ou abra uma issue no repositório correspondente.</sub>
 </div>
