@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/logo.png" alt="TecTeca — Conectando Histórias" width="320" />
   <br /><br />
-  <img src="assets/mascot.png" alt="Mascote TecTeca" width="100" />
+  <img src="assets/LogoText.png" alt="TecTeca" width="200" />
   <br /><br />
   <p><em>Plataforma de leitura e interação social para o público familiar e infantil</em></p>
   <br />
@@ -803,7 +803,7 @@ git push origin master   # dispara o CI/CD
 ---
 
 <div align="center">
-  <img src="assets/LogoText2.png" alt="TecTeca" width="160" />
+  <img src="assets/LogoText2.png" alt="TecTeca" width="460" />
   <br /><br />
   <sub>Documentação gerada em 24/03/2026 · Mantida pelos times de API, Dash e Mobile da Tecteca.</sub>
 </div>
