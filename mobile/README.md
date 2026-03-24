@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Tecteca Logo" width="120" style="border-radius: 20px" />
+  <img src="assets/logo.png" alt="Tecteca Logo" width="120" style="border-radius: 20px" />
   <h1>📱 Tecteca Mobile</h1>
   <p><em>Aplicativo oficial da plataforma Tecteca, conectando famílias e crianças através do poder da leitura e interação social.</em></p>
 </div>
