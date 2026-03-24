@@ -764,16 +764,6 @@ kill -9 <PID>
 | **Dash** | Douglas Froes | [DouglasFroes](https://github.com/DouglasFroes) | douglassantosfroes@gmail.com | Frontend Web |
 | **Mobile** | Douglas Froes | [DouglasFroes](https://github.com/DouglasFroes) | douglassantosfroes@gmail.com | Mobile (Android / iOS) |
 
-### Canais de comunicação
-
-| Canal | Contato |
-| :--- | :--- |
-| **E-mail** | douglassantosfroes@gmail.com |
-| **GitHub** | [github.com/DouglasFroes](https://github.com/DouglasFroes) |
-| **GitHub Issues** | Abrir no repositório correspondente (API, Dash ou Mobile) |
-
-> **Dica:** ao abrir uma issue, informe o módulo afetado, ambiente (dev/prod) e passos para reproduzir o problema.
-
 ---
 
 <div align="center">
