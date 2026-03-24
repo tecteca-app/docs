@@ -61,7 +61,6 @@ Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
    - [Build e Deploy](#45-build-e-deploy)
    - [Operações Comuns](#46-operações-comuns)
 5. [Equipe e Contato](#5-equipe-e-contato)
-6. [Fluxo de Trabalho Git](#6-fluxo-de-trabalho-git)
 
 ---
 
@@ -759,70 +758,21 @@ kill -9 <PID>
 
 > Para dúvidas técnicas, fale diretamente com o responsável pelo módulo.
 
-| Módulo | Responsável | GitHub | Área |
-| :--- | :--- | :--- | :--- |
-| **API** | *(preencher)* | *(preencher)* | Backend / Infra |
-| **Dash** | *(preencher)* | *(preencher)* | Frontend Web |
-| **Mobile** | *(preencher)* | *(preencher)* | Mobile (Android / iOS) |
+| Módulo | Responsável | GitHub | E-mail | Área |
+| :--- | :--- | :--- | :--- | :--- |
+| **API** | Douglas Froes | [DouglasFroes](https://github.com/DouglasFroes) | douglassantosfroes@gmail.com | Backend / Infra |
+| **Dash** | Douglas Froes | [DouglasFroes](https://github.com/DouglasFroes) | douglassantosfroes@gmail.com | Frontend Web |
+| **Mobile** | Douglas Froes | [DouglasFroes](https://github.com/DouglasFroes) | douglassantosfroes@gmail.com | Mobile (Android / iOS) |
 
 ### Canais de comunicação
 
-| Canal | Uso |
+| Canal | Contato |
 | :--- | :--- |
-| **GitHub Issues** | Bugs e melhorias — abrir issue no repositório correspondente |
-| **GitHub Pull Requests** | Revisão de código — mencionar o responsável do módulo |
-| **Slack / WhatsApp** | *(preencher canal interno)* — dúvidas rápidas do dia a dia |
+| **E-mail** | douglassantosfroes@gmail.com |
+| **GitHub** | [github.com/DouglasFroes](https://github.com/DouglasFroes) |
+| **GitHub Issues** | Abrir no repositório correspondente (API, Dash ou Mobile) |
 
 > **Dica:** ao abrir uma issue, informe o módulo afetado, ambiente (dev/prod) e passos para reproduzir o problema.
-
----
-
-## 6. Fluxo de Trabalho Git
-
-> Convenção adotada nos três repositórios.
-
-### Branches principais
-
-| Branch | Propósito |
-| :--- | :--- |
-| `master` / `main` | Produção — deploy automático via GitHub Actions |
-| `develop` | Integração — base para novas features |
-| `feature/<nome>` | Desenvolvimento de funcionalidades isoladas |
-| `fix/<nome>` | Correções de bugs |
-| `hotfix/<nome>` | Correções urgentes diretamente em produção |
-
-### Ciclo padrão de uma feature
-
-```bash
-# 1. Criar branch a partir de develop
-git checkout develop
-git pull origin develop
-git checkout -b feature/minha-feature
-
-# 2. Desenvolver e commitar
-git add .
-git commit -m "feat: descrição curta da mudança"
-
-# 3. Abrir Pull Request para develop
-git push origin feature/minha-feature
-# → abrir PR no GitHub
-
-# 4. Após aprovação e merge em develop, fazer deploy para produção
-git checkout master
-git merge develop
-git push origin master   # dispara o CI/CD
-```
-
-### Convenção de commits (Conventional Commits)
-
-| Prefixo | Uso |
-| :--- | :--- |
-| `feat:` | Nova funcionalidade |
-| `fix:` | Correção de bug |
-| `docs:` | Atualização de documentação |
-| `chore:` | Tarefas de manutenção (deps, configs) |
-| `refactor:` | Refatoração sem mudança de comportamento |
-| `test:` | Adição ou correção de testes |
 
 ---
 
