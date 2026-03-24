@@ -1,3 +1,21 @@
+<div align="center">
+  <img src="assets/logo.png" alt="TecTeca — Conectando Histórias" width="320" />
+  <br /><br />
+  <img src="assets/mascot.png" alt="Mascote TecTeca" width="100" />
+  <br /><br />
+  <p><em>Plataforma de leitura e interação social para o público familiar e infantil</em></p>
+  <br />
+
+  [![Node.js](https://img.shields.io/badge/Node.js-v14%2B-339933?logo=node.js&logoColor=white)](https://github.com/tecteca-app/api-node)
+  [![Next.js](https://img.shields.io/badge/Next.js-12-000000?logo=next.js&logoColor=white)](https://github.com/EugTec/front-next)
+  [![React Native](https://img.shields.io/badge/React%20Native-0.81-61DAFB?logo=react&logoColor=black)](https://github.com/tecteca-app/mobile)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](#)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Latest-4169E1?logo=postgresql&logoColor=white)](#)
+  [![Redis](https://img.shields.io/badge/Redis-Latest-DC382D?logo=redis&logoColor=white)](#)
+</div>
+
+---
+
 # Documentação Completa — Tecteca
 
 Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
@@ -7,6 +25,15 @@ Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
 | **api** | https://github.com/tecteca-app/api-node | `api/` |
 | **dash** | https://github.com/EugTec/front-next | `dash/` |
 | **mobile** | https://github.com/tecteca-app/mobile | `mobile/` |
+
+### URLs de produção
+
+| Serviço | URL | Porta local |
+| :--- | :--- | :--- |
+| **API** | https://api.tecteca.com.br | `3001` |
+| **Dashboard** | *(configurar `URL_REST` no deploy)* | `3000` |
+| **App Android** | Google Play Store | `8081` (Metro) |
+| **App iOS** | App Store / TestFlight | `8081` (Metro) |
 
 ---
 
@@ -510,6 +537,10 @@ yarn start
 
 ## 4. Mobile — Aplicativo React Native
 
+<div align="center">
+  <img src="assets/mascot.png" alt="Mascote TecTeca" width="80" />
+</div>
+
 > Repositório: https://github.com/tecteca-app/mobile  
 > Documentação local: [`mobile/README.md`](mobile/README.md)
 
@@ -722,4 +753,57 @@ kill -9 <PID>
 
 ---
 
-*Documentação gerada em 24/03/2026 a partir dos READMEs e arquivos de documentação de cada repositório.*
+## 5. Fluxo de Trabalho Git
+
+> Convenção adotada nos três repositórios.
+
+### Branches principais
+
+| Branch | Propósito |
+| :--- | :--- |
+| `master` / `main` | Produção — deploy automático via GitHub Actions |
+| `develop` | Integração — base para novas features |
+| `feature/<nome>` | Desenvolvimento de funcionalidades isoladas |
+| `fix/<nome>` | Correções de bugs |
+| `hotfix/<nome>` | Correções urgentes diretamente em produção |
+
+### Ciclo padrão de uma feature
+
+```bash
+# 1. Criar branch a partir de develop
+git checkout develop
+git pull origin develop
+git checkout -b feature/minha-feature
+
+# 2. Desenvolver e commitar
+git add .
+git commit -m "feat: descrição curta da mudança"
+
+# 3. Abrir Pull Request para develop
+git push origin feature/minha-feature
+# → abrir PR no GitHub
+
+# 4. Após aprovação e merge em develop, fazer deploy para produção
+git checkout master
+git merge develop
+git push origin master   # dispara o CI/CD
+```
+
+### Convenção de commits (Conventional Commits)
+
+| Prefixo | Uso |
+| :--- | :--- |
+| `feat:` | Nova funcionalidade |
+| `fix:` | Correção de bug |
+| `docs:` | Atualização de documentação |
+| `chore:` | Tarefas de manutenção (deps, configs) |
+| `refactor:` | Refatoração sem mudança de comportamento |
+| `test:` | Adição ou correção de testes |
+
+---
+
+<div align="center">
+  <img src="assets/logo.png" alt="TecTeca" width="160" />
+  <br /><br />
+  <sub>Documentação gerada em 24/03/2026 · Mantida pelos times de API, Dash e Mobile da Tecteca.</sub>
+</div>
