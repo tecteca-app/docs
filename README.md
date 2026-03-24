@@ -4,9 +4,9 @@ Visão consolidada dos três repositórios que compõem a plataforma Tecteca.
 
 | Repositório | GitHub | Pasta local |
 | --- | --- | --- |
-| **api** | https://github.com/tecteca-app/api-node | `../api/` |
-| **dash** | https://github.com/EugTec/front-next | `../dash/` |
-| **mobile** | https://github.com/tecteca-app/mobile | `../mobile/` |
+| **api** | https://github.com/tecteca-app/api-node | `api/` |
+| **dash** | https://github.com/EugTec/front-next | `dash/` |
+| **mobile** | https://github.com/tecteca-app/mobile | `mobile/` |
 
 ---
 
@@ -59,7 +59,7 @@ A Tecteca é uma plataforma de leitura e interação social voltada ao público 
 ## 2. API — Backend Node.js
 
 > Repositório: https://github.com/tecteca-app/api-node  
-> Documentação local: [`../api/README.md`](../api/README.md)
+> Documentação local: [`api/README.md`](api/README.md)
 
 ### 2.1 Tecnologias
 
@@ -332,7 +332,7 @@ Authorization: Bearer <admin_token>
 ## 3. Dash — Dashboard Web (Next.js)
 
 > Repositório: https://github.com/EugTec/front-next  
-> Documentação local: [`../dash/README.md`](../dash/README.md)
+> Documentação local: [`dash/README.md`](dash/README.md)
 
 ### 3.1 Tecnologias
 
@@ -511,7 +511,7 @@ yarn start
 ## 4. Mobile — Aplicativo React Native
 
 > Repositório: https://github.com/tecteca-app/mobile  
-> Documentação local: [`../mobile/README.md`](../mobile/README.md)
+> Documentação local: [`mobile/README.md`](mobile/README.md)
 
 ### 4.1 Tecnologias
 
