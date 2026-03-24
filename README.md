@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/logo.png" alt="TecTeca — Conectando Histórias" width="320" />
   <br /><br />
-  <img src="assets/LogoText.png" alt="TecTeca" width="200" />
+  <img src="assets/logoText.png" alt="TecTeca" width="200" />
   <br /><br />
   <p><em>Plataforma de leitura e interação social para o público familiar e infantil</em></p>
   <br />
